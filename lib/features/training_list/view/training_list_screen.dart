@@ -11,17 +11,26 @@ class TraningListScreen extends StatefulWidget {
 class _TraningListScreenState extends State<TraningListScreen> {
   @override
   Widget build(BuildContext context) {
-    return GridView.count(
-      primary: false,
-      padding: const EdgeInsets.all(20),
-      crossAxisSpacing: 10,
-      mainAxisSpacing: 10,
-      crossAxisCount: 2,
-      children: <Widget>[
-        TraningListElement(),
-      ],
-    );
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('Тренироуки'),
+        ),
+        body: GridView.count(
+          primary: false,
+          padding: const EdgeInsets.all(20),
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+          crossAxisCount: 2,
+          children: <Widget>[
+            TraningListElement(),
+            TraningListElement(),
+            TraningListElement(),
+            TraningListElement(),
+            TraningListElement(),
+            TraningListElement(),
+            TraningListElement(),
+            TraningListElement(),
+          ],
+        ));
   }
 }
-
-
