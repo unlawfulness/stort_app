@@ -40,6 +40,7 @@ dependencies:
   equatable: ^2.0.5
   realm: ^1.8.0
   json_annotation: ^4.8.1
+  uuid: ^4.3.3
 
 dev_dependencies:
   flutter_test:
