@@ -21,7 +21,6 @@ class TraningRepository implements TraningInterface {
 
   @override
   Future<void> delTraning(Traning traning) async {
-
-    realm.write(() => realm.delete<>(realm.find(traning.id)));
+    realm.write(() => realm.delete(traning));
   }
 }
