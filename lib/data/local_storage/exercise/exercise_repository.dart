@@ -21,7 +21,6 @@ class ExerciseRepository implements ExerciseInterface {
 
   @override
   Future<void> delExercise(Exercise exercise) async {
-    // TODO: implement delExercise
-    throw UnimplementedError();
+    realm.write(() => realm.delete(exercise));
   }
 }
